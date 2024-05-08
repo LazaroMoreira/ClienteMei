@@ -1,0 +1,34 @@
+.main {
+    padding: 40px 0;
+    background-color: rgba(55, 45, 34, 1);
+    min-height: 90px;
+}
+
+.center {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu button {
+    color: rgba(55, 45, 34, 1);
+    text-decoration: none;
+    border: 1px solid rgba(55, 45, 34, 1);
+    padding: 10px 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+
+.menu h3 {
+    color: white;
+}

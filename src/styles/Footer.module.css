@@ -1,0 +1,33 @@
+.main{
+    padding: 40px 0;
+    background-color:rgba(55, 45, 34, 1);
+    height: 200px;
+    color: #fff;
+}
+.center{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display:flex;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Logopequeno{
+    display:flex;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+}
+
+.direito {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,30 @@
+.corpo_container {
+    padding: 40px 0;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.corpo_container img {
+    display: flex;
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+
+}
+
+.corpo_container button {
+    border: 0cap;
+}
+
+
+.corpo_container span {
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(55, 45, 34, 1);
+
+}
