@@ -9,6 +9,8 @@
 
 }
 
+
+
 .corpo_container img {
     display: flex;
     height: 125px;
@@ -19,6 +21,8 @@
 
 .corpo_container button {
     border: 0cap;
+    margin-bottom: 40px;
+    background-color: bisque;
 }
 
 
@@ -27,4 +31,17 @@
     font-weight: bold;
     color: rgba(55, 45, 34, 1);
 
+}
+
+AccordionUsage{
+    margin-top: 40px;
+}
+
+.teste{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
