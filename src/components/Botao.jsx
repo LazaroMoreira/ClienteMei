@@ -10,6 +10,8 @@ import servicoMei from "../services/servicoMei"
 
 function Botao() {
 
+
+
     //const servicos = servicoMei.getAll()
     //servicos.map((servico) => {
     //    <div>
@@ -34,7 +36,7 @@ function Botao() {
                 </button>
 
                 <button className={style.teste}> <img src={fotoestetica} alt="fotoestetica" /> 
-                <AccordionUsage titulo= "ESTETICA FACIAL"/>
+                <AccordionUsage titulo= "ESTÉTICA FACIAL"/>
                 </button>
 
 

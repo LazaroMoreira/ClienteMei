@@ -1,8 +1,11 @@
+import { ListItem, List, ListItemIcon } from "@mui/material";
 import style from "../styles/Footer.module.css";
 import logopeqn from "../styles/img/logopeqn.png";
+
+
 import InstagramIcon from '@mui/icons-material/Instagram';
 import XIcon from '@mui/icons-material/X';
-
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 
 function Footer() {
@@ -20,11 +23,30 @@ function Footer() {
 
           <div className="redes">
             <h3>Redes Sociais</h3>
-            <ul>
-              <p> <img src={InstagramIcon} alt="Instagram" /> Instagram</p>
-              <p> <img src="" alt="Facebook" /> Facebook</p>
-              <p> <img src={XIcon} alt="Twitter" /> Twitter</p>
-            </ul>
+            <List>
+              
+              <ListItem>
+                <ListItemIcon>
+                  <XIcon />
+                </ListItemIcon>
+                @Garershop.oficial
+              </ListItem>
+
+              <ListItem>
+                <ListItemIcon>
+                  <InstagramIcon />
+                </ListItemIcon>
+                @GarershopOficial
+              </ListItem>
+
+              <ListItem>
+                <ListItemIcon>
+                  <FacebookIcon />
+                </ListItemIcon>
+                Garershop Oficial
+              </ListItem>
+
+            </List>
           </div>
 
           <div className="direito">

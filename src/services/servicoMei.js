@@ -1,7 +1,7 @@
 import api from './api'
 
 const servicoMei = {
-    getAll: ()=>{
+    getAll: async ()=>{
         api.get('/servicos')
     }
 }
