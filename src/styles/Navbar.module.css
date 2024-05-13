@@ -26,8 +26,15 @@
     border-radius: 10px;
     font-size: 15px;
     font-weight: bolder;
+    cursor: pointer;
 
 }
+
+.menu button:hover {
+    background-color: rgba(144, 95, 69, 1);
+    color: rgb(238, 238, 238);
+}
+
 
 .menu h3 {
     color: white;

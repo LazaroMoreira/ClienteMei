@@ -16,14 +16,15 @@ export default function AccordionUsage(props) {
     const [servicos, setServicos] = useState([])
 
     useEffect(() => {
-        servicoMei.getAll().then((res) => {
-            console.log(res)
+        servicoMei.getServicoByCategoria(props.id_categoria).then((res) => {
+            // console.log(res.data)
+            setServicos(res.data)
         }).catch((error) => {
             console.log(error)
         })
     }, [])
 
-    //if (!rows) return null;
+    if (!servicos) return null;
 
     return (
         <div >
@@ -36,7 +37,7 @@ export default function AccordionUsage(props) {
                     {props.titulo}
                 </AccordionSummary>
                 <AccordionDetails>
-                    {servicos.map((item) => <>{item.nome_servico} <button onClick={""}> RESERVA AGORA </button></>)}
+                     {servicos.map((item) => <>{item.nome_servico} <button onClick={""}> RESERVA AGORA </button></>)} 
                 </AccordionDetails>
             </Accordion>
 

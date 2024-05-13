@@ -12,7 +12,7 @@ function Navbar() {
         <div className={style.center}>
           <div className={style.menu}>
             <div className='logo'>
-              <h3>BARBEARIA BARBESHOP</h3>
+              <h3>BARBEARIA GARERSHOP</h3>
             </div>
             <div className='item-menu'>
               <button onnclick={e => setIsActive(!isActive)}>RESERVE AGORA</button>

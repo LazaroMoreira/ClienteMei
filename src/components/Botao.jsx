@@ -1,43 +1,57 @@
 import style from "../styles/Botao.module.css"
-import fotocabelo from "../styles/img/FOTO CABELO.png"
-import fotobarba from "../styles/img/FOTO BARBA.png"
-import fotocombo from "../styles/img/FOTO COMBO.png"
-import fotoestetica from "../styles/img/FOTO ESTETICA.png"
+// import fotocabelo from "../../public/img/FOTOCABELO.png"
+// import fotobarba from "../../public/img/FOTOBARBA.png"
+// import fotocombo from "../../public/img/FOTOCOMBO.png"
+// import fotoestetica from "../../public/img/FOTOESTETICA.png"
 import AccordionUsage from "../components/Accordion"
+
 import servicoMei from "../services/servicoMei"
-
-
+import { useState, useEffect } from 'react'
 
 function Botao() {
 
+    const [servicos, setServicos] = useState([])
+    const [categorias, setCategorias] = useState([])
 
-
-    //const servicos = servicoMei.getAll()
-    //servicos.map((servico) => {
-    //    <div>
-    //        servico.nome_servico
-    //    </div>
-    //})
+    useEffect(() => {
+        servicoMei.getCategorias().then((res) => {
+            console.log(res)
+            setCategorias(res.data)
+        }).catch((error) => {
+            console.log(error)
+        })
+    }, [])
 
     return (
         <div>
             <section className={style.corpo_container}>
 
-                <button className={style.teste}> <img src={fotocabelo} alt="fotocabelo" /> 
-                <AccordionUsage titulo= "CABELO"/>
+                {/* {servicos.map((item) => <>{item.nome_servico} <button onClick={""}> RESERVA AGORA </button></>)} */}
+                {categorias.map((categoria) => (
+                <button className={style.teste} key={categoria.id_categoria}> 
+                    <AccordionUsage titulo={categoria.categoria} id_categoria={categoria.id_categoria} />
+                </button>
+                ))}
+
+
+
+
+
+                {/* <button className={style.teste}> <img src={fotocabelo} alt="fotocabelo" />
+                    <AccordionUsage titulo="CABELO" />
                 </button>
 
-                <button className={style.teste}> <img src={fotobarba} alt="fotobarba" /> 
-                <AccordionUsage titulo= "BARBA"/>
+                <button className={style.teste}> <img src={fotobarba} alt="fotobarba" />
+                    <AccordionUsage titulo="BARBA" />
                 </button>
 
-                <button className={style.teste}> <img src={fotocombo} alt="fotocombo" /> 
-                <AccordionUsage titulo= "COMBO"/>
+                <button className={style.teste}> <img src={fotocombo} alt="fotocombo" />
+                    <AccordionUsage titulo="COMBO" />
                 </button>
 
-                <button className={style.teste}> <img src={fotoestetica} alt="fotoestetica" /> 
-                <AccordionUsage titulo= "ESTÉTICA FACIAL"/>
-                </button>
+                <button className={style.teste}> <img src={fotoestetica} alt="fotoestetica" />
+                    <AccordionUsage titulo="ESTÉTICA FACIAL" />
+                </button> */}
 
 
             </section>
