@@ -8,7 +8,7 @@ import barbeiro4 from '../styles/img/barbeiro4.png';
 function Sobre() {
   return (
     <div className={style.corpo_container}>
-      <section>
+      <section className={style.secao1}>
         <h3>
           SOBRE A <span>EMPRESA:</span>
         </h3>

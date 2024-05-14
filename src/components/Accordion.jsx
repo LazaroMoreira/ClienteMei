@@ -40,7 +40,7 @@ export default function AccordionUsage(props) {
           {servicos.map((item) => (
             <span className={style.ButtonModal}>
               {item.nome_servico}
-              <DialogForm buttonTitle="RESERVE AGORA" id_servico={item.id_servico} className={style.reser} /> 
+              <DialogForm buttonTitle="RESERVE AGORA" id_servico={item.id_servico} /> 
             </span>
           ))}
         </AccordionDetails>

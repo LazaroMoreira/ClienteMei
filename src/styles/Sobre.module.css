@@ -2,10 +2,11 @@
   min-height: 400px;
   padding: 40px 0;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 40px auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .corpo_container section {
@@ -35,4 +36,10 @@
   border-radius: 50%;
   margin-top: 30px;
   padding-left: 5px;
+}
+
+.secao1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
