@@ -7,8 +7,7 @@ function Meio() {
         <div className={style.menu}>
           <section className="meio_container}">
             <h3>
-              {' '}
-              CONFIRA <span className={style.span}>NOSSOS SERVIÇOS:</span>
+              CONFIRA <span className={style.services}>NOSSOS SERVIÇOS:</span>
             </h3>
           </section>
         </div>

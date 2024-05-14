@@ -8,6 +8,10 @@
   margin-top: 20px;
 }
 
+.teste10 {
+  margin-top: 40px;
+}
+
 .corpo_container img {
   display: flex;
   height: 125px;
@@ -17,7 +21,6 @@
 
 .corpo_container button {
   border: 0cap;
-  margin-bottom: 40px;
   background-color: bisque;
 }
 
