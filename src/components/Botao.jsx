@@ -10,7 +10,6 @@ import { useState, useEffect } from 'react'
 
 function Botao() {
 
-    const [servicos, setServicos] = useState([])
     const [categorias, setCategorias] = useState([])
 
     useEffect(() => {
@@ -26,33 +25,11 @@ function Botao() {
         <div>
             <section className={style.corpo_container}>
 
-                {/* {servicos.map((item) => <>{item.nome_servico} <button onClick={""}> RESERVA AGORA </button></>)} */}
                 {categorias.map((categoria) => (
-                <button className={style.teste} key={categoria.id_categoria}> 
+                <button className={style.teste} key={categoria.id_categoria}> <img src={categoria.img_categoria} alt="fotocabelo"/> 
                     <AccordionUsage titulo={categoria.categoria} id_categoria={categoria.id_categoria} />
                 </button>
                 ))}
-
-
-
-
-
-                {/* <button className={style.teste}> <img src={fotocabelo} alt="fotocabelo" />
-                    <AccordionUsage titulo="CABELO" />
-                </button>
-
-                <button className={style.teste}> <img src={fotobarba} alt="fotobarba" />
-                    <AccordionUsage titulo="BARBA" />
-                </button>
-
-                <button className={style.teste}> <img src={fotocombo} alt="fotocombo" />
-                    <AccordionUsage titulo="COMBO" />
-                </button>
-
-                <button className={style.teste}> <img src={fotoestetica} alt="fotoestetica" />
-                    <AccordionUsage titulo="ESTÉTICA FACIAL" />
-                </button> */}
-
 
             </section>
 

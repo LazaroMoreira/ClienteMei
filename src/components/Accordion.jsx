@@ -37,7 +37,7 @@ export default function AccordionUsage(props) {
                     {props.titulo}
                 </AccordionSummary>
                 <AccordionDetails>
-                     {servicos.map((item) => <>{item.nome_servico} <button onClick={""}> RESERVA AGORA </button></>)} 
+                     {servicos.map((item) => <span> {item.nome_servico} <button onClick={""}> RESERVA AGORA </button> </span>)} 
                 </AccordionDetails>
             </Accordion>
 
