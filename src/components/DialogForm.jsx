@@ -10,6 +10,8 @@ import Calendar from './Calendar';
 import agendamento from '../services/agendamento';
 import { useState } from 'react';
 
+import style from "../styles/Dialog.module.css"
+
 export default function DialogAgendamento({ buttonTitle, id_servico }) {
   const [open, setOpen] = React.useState(false);
   const [dataSelecionada, setDataSelecionanda] = useState(null);
@@ -28,7 +30,7 @@ export default function DialogAgendamento({ buttonTitle, id_servico }) {
 
   return (
     <React.Fragment>
-      <Button variant="outlined" onClick={handleClickOpen}>
+      <Button className={style.teste22} variant="outlined" onClick={handleClickOpen}>
         {buttonTitle}
       </Button>
       <Dialog

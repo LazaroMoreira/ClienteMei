@@ -11,14 +11,17 @@ function Footer() {
     <div className={style.main}>
       <div className={style.center}>
         <div className={style.menu}>
-          <div className="horario">
-            <h3>Horários de Funcionamento</h3>
+          
+          
+          <div className={style.funcion}>
+            <h3> Horários de Funcionamento</h3>
+
             <p>Segunda a Sexta: 9h - 18h</p>
             <p>Sábado: 10h - 15h</p>
             <p>Domingo: Fechado</p>
           </div>
 
-          <div className="redes">
+          <div className={style.redes}>
             <h3>Redes Sociais</h3>
             <List>
               <ListItem>
@@ -44,9 +47,9 @@ function Footer() {
             </List>
           </div>
 
-          <div className="direito">
+          <div className={style.direito}>
             <img src={logopeqn} alt="fotobarba" className="logopequeno" />
-            <p>Todos os direitos são reservados.</p>
+            <p className={style.distanceText}>Todos os direitos são reservados.</p>
           </div>
         </div>
       </div>

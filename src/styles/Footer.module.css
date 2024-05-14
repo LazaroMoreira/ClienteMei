@@ -4,6 +4,7 @@
   height: 200px;
   color: #fff;
 }
+
 .center {
   max-width: 960px;
   margin: 0 auto;
@@ -22,7 +23,6 @@
   display: flex;
   height: 125px;
   width: 125px;
-  border-radius: 50%;
 }
 
 .direito {
@@ -30,4 +30,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.distanceText {
+  margin-top: 20px;
+}
+
+.redes{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+}
+
+.funcion{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }

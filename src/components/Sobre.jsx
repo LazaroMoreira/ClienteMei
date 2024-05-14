@@ -22,16 +22,18 @@ function Sobre() {
         </p>
       </section>
 
-      <section className={style.caixaimg}>
-        <h3>
+      <section className={style.secao2}>
+        <h3  className={style.title2}>
           MEMBROS DA <span>EQUIPE:</span>
         </h3>
-
-        <img src={barbeiro1} alt="botaoteste" />
-        <img src={barbeiro2} alt="botaoteste" />
-        <img src={barbeiro3} alt="botaoteste" />
-        <img src={barbeiro4} alt="botaoteste" />
+        <div className={style.imgMural}>
+          <img src={barbeiro1} alt="botaoteste" />
+          <img src={barbeiro2} alt="botaoteste" />
+          <img src={barbeiro3} alt="botaoteste" />
+          <img src={barbeiro4} alt="botaoteste" />
+        </div>
       </section>
+
     </div>
   );
 }
