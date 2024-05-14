@@ -53,9 +53,6 @@ export default function DialogAgendamento({ buttonTitle, id_servico }) {
               .createAgendamento(form)
               .then((res) => {
                 console.log(res.data);
-                // if (res.data) {
-                //   window.location.href = '/servicos';
-                // }
               })
               .catch(() => alert('Erro ao cadastrar serviço'));
 
