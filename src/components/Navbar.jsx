@@ -1,10 +1,7 @@
 import style from '../styles/Navbar.module.css';
-import { useState } from 'react';
 import ModalServicos from './ModalServicos';
 
 function Navbar() {
-  const [isActive, setIsActive] = useState(false);
-
   return (
     <div className="NavBar">
       <div className={style.main}>

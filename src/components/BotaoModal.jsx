@@ -1,12 +1,10 @@
-import style from '../styles/Botao.module.css';
-// import fotocabelo from "../../public/img/FOTOCABELO.png"
-// import fotobarba from "../../public/img/FOTOBARBA.png"
-// import fotocombo from "../../public/img/FOTOCOMBO.png"
-// import fotoestetica from "../../public/img/FOTOESTETICA.png"
-import AccordionUsage from '../components/Accordion';
+import AccordionUsage from '../components/AccordionModal';
+import Avatar from '@mui/material/Avatar';
+import Grid from '@mui/material/Grid';
 
 import servicoMei from '../services/servicoMei';
 import { useState, useEffect } from 'react';
+import { Box } from '@mui/material';
 
 function Botao() {
   const [categorias, setCategorias] = useState([]);
@@ -24,19 +22,19 @@ function Botao() {
   }, []);
 
   return (
-    <div>
-      <section className={style.corpo_container}>
+    <Box fontFamily='sans-serif' sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2} justifyContent='space-around'>
         {categorias.map((categoria) => (
-          <button className={style.teste} key={categoria.id_categoria}>
-            <img src={categoria.img_categoria} alt="fotocabelo" />
+          <Grid item xs={5}>
+            <Avatar src={categoria.img_categoria} alt="fotocabelo" />
             <AccordionUsage
               titulo={categoria.categoria}
               id_categoria={categoria.id_categoria}
             />
-          </button>
+          </Grid>
         ))}
-      </section>
-    </div>
+      </Grid>
+    </Box>
   );
 }
 

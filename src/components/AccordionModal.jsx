@@ -4,9 +4,10 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState, useEffect } from 'react';
-import style from '../styles/Accordion.module.css';
 import servicoMei from '../services/servicoMei';
-import DialogForm from './DialogForm'
+import DialogForm from './DialogForm';
+import Button from '@mui/material/Button';
+import { Box } from '@mui/material';
 
 export default function AccordionUsage(props) {
   const [servicos, setServicos] = useState([]);
@@ -27,7 +28,7 @@ export default function AccordionUsage(props) {
 
   return (
     <div>
-      <Accordion className={style.accordion}>
+      <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -38,10 +39,19 @@ export default function AccordionUsage(props) {
         </AccordionSummary>
         <AccordionDetails>
           {servicos.map((item) => (
-            <span>
-              {item.nome_servico}
-              <DialogForm buttonTitle="RESERVE AGORA" /> 
-            </span>
+            <Box
+              sx={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}
+            >
+              <Box my={1} fontSize={14}>
+                {item.nome_servico}
+              </Box>
+              <DialogForm buttonTitle="RESERVE AGORA" />
+            </Box>
           ))}
         </AccordionDetails>
       </Accordion>
