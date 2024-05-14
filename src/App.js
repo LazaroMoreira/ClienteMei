@@ -1,13 +1,9 @@
-
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Meio from "./components/Meio";
-import Botao from "./components/Botao";
-import Sobre from "./components/Sobre"
-import Footer from "./components/Footer"
-
-
-
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Meio from './components/Meio';
+import Botao from './components/Botao';
+import Sobre from './components/Sobre';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,7 +14,6 @@ function App() {
       <Botao />
       <Sobre />
       <Footer />
-
     </div>
   );
 }

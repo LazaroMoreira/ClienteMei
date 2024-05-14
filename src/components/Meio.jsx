@@ -1,4 +1,4 @@
-import style from '../styles/Meio.module.css'
+import style from '../styles/Meio.module.css';
 
 function Meio() {
   return (
@@ -6,13 +6,14 @@ function Meio() {
       <div className={style.center}>
         <div className={style.menu}>
           <section className="meio_container}">
-            <h3> CONFIRA <span className={style.span}>NOSSOS SERVIÇOS:</span></h3>
+            <h3>
+              {' '}
+              CONFIRA <span className={style.span}>NOSSOS SERVIÇOS:</span>
+            </h3>
           </section>
-
         </div>
       </div>
     </div>
-
   );
 }
 

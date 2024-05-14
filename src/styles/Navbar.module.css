@@ -1,41 +1,39 @@
 .main {
-    padding: 40px 0;
-    background-color: rgba(55, 45, 34, 1);
-    min-height: 90px;
+  padding: 40px 0;
+  background-color: rgba(55, 45, 34, 1);
+  min-height: 90px;
 }
 
 .center {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 2%;
-    display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: flex;
 }
 
 .menu {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .menu button {
-    color: rgba(55, 45, 34, 1);
-    text-decoration: none;
-    border: 1px solid rgba(55, 45, 34, 1);
-    padding: 10px 50px;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: bolder;
-    cursor: pointer;
-
+  color: rgba(55, 45, 34, 1);
+  text-decoration: none;
+  border: 1px solid rgba(55, 45, 34, 1);
+  padding: 10px 50px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 .menu button:hover {
-    background-color: rgba(144, 95, 69, 1);
-    color: rgb(238, 238, 238);
+  background-color: rgba(144, 95, 69, 1);
+  color: rgb(238, 238, 238);
 }
 
-
 .menu h3 {
-    color: white;
+  color: white;
 }
