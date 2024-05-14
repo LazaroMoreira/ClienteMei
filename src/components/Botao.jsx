@@ -24,11 +24,12 @@ function Botao() {
   }, []);
 
   return (
-    <div>
+    <div className={style.teste10}>
       <section className={style.corpo_container}>
         {categorias.map((categoria) => (
           <button className={style.teste} key={categoria.id_categoria}>
             <img src={categoria.img_categoria} alt="fotocabelo" />
+            
             <AccordionUsage
               titulo={categoria.categoria}
               id_categoria={categoria.id_categoria}

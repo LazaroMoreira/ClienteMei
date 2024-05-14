@@ -38,9 +38,9 @@ export default function AccordionUsage(props) {
         </AccordionSummary>
         <AccordionDetails>
           {servicos.map((item) => (
-            <span>
+            <span className={style.ButtonModal}>
               {item.nome_servico}
-              <DialogForm buttonTitle="RESERVE AGORA" id_servico={item.id_servico} /> 
+              <DialogForm buttonTitle="RESERVE AGORA" id_servico={item.id_servico} className={style.reser} /> 
             </span>
           ))}
         </AccordionDetails>

@@ -7,7 +7,7 @@ function Navbar() {
       <div className={style.main}>
         <div className={style.center}>
           <div className={style.menu}>
-            <div className="logo">
+            <div className={style.logo}>
               <h3>BARBEARIA GARERSHOP</h3>
             </div>
             <div>

@@ -8,9 +8,9 @@ function Header() {
   return (
     <div className={style.hero}>
       <div className={style.content}>
-        <h1> DESCUBRA A EXCELÊNCIA</h1>
-        <h2> OS MELHORES SERVIÇOS</h2>
-        <p>PELOS PREÇOS MAIS JUSTOS</p>
+        <h1 className={style.exec}> DESCUBRA A EXCELÊNCIA</h1>
+        <h2 className={style.melh}> OS MELHORES SERVIÇOS</h2>
+        <p className={style.just}>PELOS PREÇOS MAIS JUSTOS</p>
       </div>
     </div>
   );

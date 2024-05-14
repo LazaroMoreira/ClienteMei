@@ -2,7 +2,13 @@
   max-width: 200px;
 }
 
-span {
+.ButtonModal {
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
+
+.reser{
+  color: rgba(55, 45, 34, 1);
+}
+
