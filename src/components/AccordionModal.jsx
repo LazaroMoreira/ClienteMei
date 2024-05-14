@@ -6,11 +6,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState, useEffect } from 'react';
 import servicoMei from '../services/servicoMei';
 import DialogForm from './DialogForm';
-import Button from '@mui/material/Button';
 import { Box } from '@mui/material';
 
 export default function AccordionUsage(props) {
   const [servicos, setServicos] = useState([]);
+  const [servicoSelecionado, setServicoSelecionado] = useState(null);
 
   useEffect(() => {
     servicoMei
@@ -50,7 +50,7 @@ export default function AccordionUsage(props) {
               <Box my={1} fontSize={14}>
                 {item.nome_servico}
               </Box>
-              <DialogForm buttonTitle="RESERVE AGORA" />
+              <DialogForm buttonTitle="RESERVE AGORA" id_servico={item.id_servico} />
             </Box>
           ))}
         </AccordionDetails>

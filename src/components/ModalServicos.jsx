@@ -5,7 +5,6 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import DialogForm from './DialogForm';
 import Botao from './BotaoModal';
 
 export default function DialogCadastrarServico({ buttonTitle }) {
@@ -28,7 +27,7 @@ export default function DialogCadastrarServico({ buttonTitle }) {
       >
         {buttonTitle}
       </Button>
-      <Dialog open={open} onClose={handleClose}>
+      <Dialog open={open} onClose={handleClose} maxWidth='sm'>
         <DialogTitle>Agendamento</DialogTitle>
         <DialogContent>
           <DialogContentText>
