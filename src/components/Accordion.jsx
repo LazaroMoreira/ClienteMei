@@ -1,13 +1,12 @@
 import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Button from '@mui/material/Button';
 import { useState, useEffect } from 'react';
 import style from '../styles/Accordion.module.css';
 import servicoMei from '../services/servicoMei';
+import DialogForm from './DialogForm'
 
 export default function AccordionUsage(props) {
   const [servicos, setServicos] = useState([]);
@@ -39,8 +38,8 @@ export default function AccordionUsage(props) {
         <AccordionDetails>
           {servicos.map((item) => (
             <span>
-              {' '}
-              {item.nome_servico} <button onClick={''}> RESERVA AGORA </button>{' '}
+              {item.nome_servico}
+              <DialogForm buttonTitle="RESERVER AGORA" /> 
             </span>
           ))}
         </AccordionDetails>

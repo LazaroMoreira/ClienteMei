@@ -1,6 +1,6 @@
 import style from '../styles/Navbar.module.css';
-//import logo from '../styles/img/logopeqn.png'
 import { useState } from 'react';
+import ModalServicos from './ModalServicos';
 
 function Navbar() {
   const [isActive, setIsActive] = useState(false);
@@ -13,10 +13,8 @@ function Navbar() {
             <div className="logo">
               <h3>BARBEARIA GARERSHOP</h3>
             </div>
-            <div className="item-menu">
-              <button onnclick={(e) => setIsActive(!isActive)}>
-                RESERVE AGORA
-              </button>
+            <div>
+              <ModalServicos buttonTitle="RESERVE AGORA" />
             </div>
           </div>
         </div>
