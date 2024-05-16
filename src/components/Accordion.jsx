@@ -6,7 +6,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState, useEffect } from 'react';
 import style from '../styles/Accordion.module.css';
 import servicoMei from '../services/servicoMei';
-import DialogForm from './DialogForm'
+import DialogForm from './DialogForm';
 
 export default function AccordionUsage(props) {
   const [servicos, setServicos] = useState([]);
@@ -15,7 +15,6 @@ export default function AccordionUsage(props) {
     servicoMei
       .getServicoByCategoria(props.id_categoria)
       .then((res) => {
-        // console.log(res.data)
         setServicos(res.data);
       })
       .catch((error) => {
@@ -40,7 +39,10 @@ export default function AccordionUsage(props) {
           {servicos.map((item) => (
             <span className={style.ButtonModal}>
               {item.nome_servico}
-              <DialogForm buttonTitle="RESERVE AGORA" id_servico={item.id_servico} /> 
+              <DialogForm
+                buttonTitle="RESERVE AGORA"
+                id_servico={item.id_servico}
+              />
             </span>
           ))}
         </AccordionDetails>

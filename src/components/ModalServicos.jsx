@@ -27,7 +27,7 @@ export default function DialogCadastrarServico({ buttonTitle }) {
       >
         {buttonTitle}
       </Button>
-      <Dialog open={open} onClose={handleClose} maxWidth='sm'>
+      <Dialog open={open} onClose={handleClose} maxWidth="sm">
         <DialogTitle>Agendamento</DialogTitle>
         <DialogContent>
           <DialogContentText>

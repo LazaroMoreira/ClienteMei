@@ -16,7 +16,6 @@ export default function AccordionUsage(props) {
     servicoMei
       .getServicoByCategoria(props.id_categoria)
       .then((res) => {
-        // console.log(res.data)
         setServicos(res.data);
       })
       .catch((error) => {
@@ -50,7 +49,10 @@ export default function AccordionUsage(props) {
               <Box my={1} fontSize={14}>
                 {item.nome_servico}
               </Box>
-              <DialogForm buttonTitle="RESERVE AGORA" id_servico={item.id_servico} />
+              <DialogForm
+                buttonTitle="RESERVE AGORA"
+                id_servico={item.id_servico}
+              />
             </Box>
           ))}
         </AccordionDetails>

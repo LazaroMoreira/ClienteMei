@@ -11,7 +11,7 @@ export default function ControlledComponent({ onDateChange }) {
   const handleChange = (newValue) => {
     setValue(newValue);
     onDateChange(newValue);
-  }
+  };
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>

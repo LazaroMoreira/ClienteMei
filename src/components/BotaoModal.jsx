@@ -22,8 +22,8 @@ function Botao() {
   }, []);
 
   return (
-    <Box fontFamily='sans-serif' sx={{ flexGrow: 1 }}>
-      <Grid container spacing={2} justifyContent='space-around'>
+    <Box fontFamily="sans-serif" sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2} justifyContent="space-around">
         {categorias.map((categoria) => (
           <Grid item xs={5}>
             <Avatar src={categoria.img_categoria} alt="fotocabelo" />

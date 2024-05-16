@@ -23,7 +23,7 @@ function Sobre() {
       </section>
 
       <section className={style.secao2}>
-        <h3  className={style.title2}>
+        <h3 className={style.title2}>
           MEMBROS DA <span>EQUIPE:</span>
         </h3>
         <div className={style.imgMural}>
@@ -33,7 +33,6 @@ function Sobre() {
           <img src={barbeiro4} alt="botaoteste" />
         </div>
       </section>
-
     </div>
   );
 }

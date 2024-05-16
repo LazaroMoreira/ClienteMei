@@ -1,8 +1,4 @@
-// IMPORTANDO ESTILO
 import style from '../styles/Header.module.css';
-
-//IMPORTANDO IMAGEM
-//import ImagemFundo from '../styles/img/cadeirasfundo.jpg'
 
 function Header() {
   return (
