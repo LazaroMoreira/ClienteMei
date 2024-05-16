@@ -57,10 +57,10 @@ export default function DialogAgendamento({ buttonTitle, id_servico }) {
 
             agendamento
               .createAgendamento(form)
-              .then((res) => {
-                console.log(res.data);
+              .then(() => {
+                alert('Agendamento realizado com sucesso!');
               })
-              .catch(() => alert('Erro ao cadastrar serviço'));
+              .catch(() => alert('Não foi possível realizar o agendamento!'));
 
             handleClose();
           },
